@@ -29,7 +29,7 @@ def get_usd_to_rub_rate() -> tuple[float, str]:
 
 def build_rate_text() -> str:
     rate, rate_date = get_usd_to_rub_rate()
-    return f"Текущий курс: 1 USD = {rate:.4f} RUB\nИсточник: ЦБ РФ ({rate_date})"
+    return f"Курс: 1 USD = {rate:.4f} RUB\nИсточник: ЦБ РФ ({rate_date})"
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
